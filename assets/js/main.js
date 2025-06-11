@@ -261,7 +261,7 @@ jQuery(document).ready(function($) {
       },
       emptyFill: '#ffffff',
     }).on('circle-animation-progress', function(event, progress) {
-      $(this).find('strong').html(Math.round(60 * progress) + '<i>%</i>');
+      $(this).find('strong').html(Math.round(200 * progress) + '<i>+</i>');
   });
 
 
@@ -272,7 +272,7 @@ jQuery(document).ready(function($) {
       },
       emptyFill: '#ffffff',
     }).on('circle-animation-progress', function(event, progress) {
-      $(this).find('strong').html(Math.round(70 * progress) + '<i>%</i>');
+      $(this).find('strong').html(Math.round(83 * progress) + '<i>%</i>');
   });
 
 
@@ -283,7 +283,7 @@ jQuery(document).ready(function($) {
       },
       emptyFill: '#ffffff',
     }).on('circle-animation-progress', function(event, progress) {
-      $(this).find('strong').html(Math.round(30 * progress) + '<i>%</i>');
+      $(this).find('strong').html(Math.round(12 * progress) + '<i>K</i>');
   });
 
 
@@ -294,7 +294,7 @@ jQuery(document).ready(function($) {
       },
       emptyFill: '#ffffff',
     }).on('circle-animation-progress', function(event, progress) {
-      $(this).find('strong').html(Math.round(90 * progress) + '<i>%</i>');
+      $(this).find('strong').html(Math.round(34 * progress) + '<i>%</i>');
   });
 
 
