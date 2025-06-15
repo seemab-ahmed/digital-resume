@@ -19,25 +19,25 @@ jQuery(document).ready(function($) {
       hover_project_item.hoverdir();
       var wlc_slide = $(".welcome-carousel");
       wlc_slide.owlCarousel({
-        loop:true,
+        // loop:true,
         nav:false,
         dots:true,
         items:1,
         animateIn:'fadeIn',
         animateOut:'fadeOut',
         smartplay:1000,
-        autoplay:true,
+        // autoplay:true,
       });
 
       var project_slide = $(".portfolio-carousel");
       project_slide.owlCarousel({
-        loop:true,
+        // loop:true,
         nav:true,
         dots:true,
         animateIn:'fadeIn',
         animateOut:'fadeOut',
         smartplay:1000,
-        autoplay:true,
+        // autoplay:true,
          navText:["<i class=\'fal fa-arrow-left\'></i>", "<i class=\'fal fa-arrow-right\'></i>"],
          responsive:{
             0:{
@@ -54,14 +54,14 @@ jQuery(document).ready(function($) {
 
       var project_slide2 = $(".portfolio-carousel2");
       project_slide2.owlCarousel({
-        loop:true,
+        // loop:true,
         nav:true,
         dots:true,
         items:4,
         animateIn:'fadeIn',
         animateOut:'fadeOut',
         smartplay:1000,
-        autoplay:true,
+        // autoplay:true,
          navText:["<i class=\'fal fa-arrow-left\'></i>", "<i class=\'fal fa-arrow-right\'></i>"],
          responsive:{
             0:{
@@ -79,11 +79,11 @@ jQuery(document).ready(function($) {
 
       var banner_slide = $(".banner-carousel");
       banner_slide.owlCarousel({
-        loop:true,
+        // loop:true,
         nav:true,
         dots:false,
         animateIn:'fadeInUp',
-        autoplay:true,
+        // autoplay:true,
         items:1,
         navText:["<i class=\'fal fa-arrow-left\'></i>", "<i class=\'fal fa-arrow-right\'></i>"],
 
@@ -104,10 +104,10 @@ jQuery(document).ready(function($) {
 
       var blogs = $(".blogs");
       blogs.owlCarousel({
-        loop:true,
+        // loop:true,
         nav:true,
         dots:false,
-        autoplay:true,
+        // autoplay:true,
         margin:30,
         
         navText:["<i class=\'fal fa-arrow-left\'></i>", "<i class=\'fal fa-arrow-right\'></i>"],
@@ -255,7 +255,7 @@ jQuery(document).ready(function($) {
     stickyNav();
 
     $('#circle1').circleProgress({
-      value: 0.6,
+      value: 1,
       fill: {
         color: '#08d665'
       },
@@ -277,7 +277,7 @@ jQuery(document).ready(function($) {
 
 
     $('#circle3').circleProgress({
-      value: 0.3,
+      value: 0.9,
       fill: {
         color: '#08d665'
       },
@@ -288,7 +288,7 @@ jQuery(document).ready(function($) {
 
 
     $('#circle4').circleProgress({
-      value: 0.9,
+      value: 0.8,
       fill: {
         color: '#08d665'
       },

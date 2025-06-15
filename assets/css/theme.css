@@ -1006,10 +1006,12 @@ span.circle.circle-4 {
     margin: 30px 0 0px 0px;
 }
 
+.service-text .greyText {
+    color: grey;
+}
 
 .service-text p {
-    color         : #999999;
-    text-transform: capitalize;
+    color         : grey;
     font-size     : 18px;
     font-weight   : 400;
     margin-bottom: 0;
@@ -1635,6 +1637,20 @@ img.cta-shape {
     padding: 0;
 }
 
+.portfolio-area h4 {
+    color:#22cd6f;   
+}
+.sinlge-social-hover1 a {
+    display: block;
+    padding: 50px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    transform: scale(1);
+    background: #22cd6f;
+    opacity: 1;
+}
+
 .sinlge-social-hover a {
     display: block;
     padding: 50px 30px;
@@ -1660,7 +1676,6 @@ img.cta-shape {
     content: "";
     height: 100%;
     width: 0;
-    background: #22cd6f;
     top: 0;
     left: 0;
     z-index: -1;
@@ -1676,7 +1691,7 @@ span.single-social-icon i {
 
 .sinlge-social-hover:hover a {
     visibility: visible;
-    opacity: 1;
+    opacity: 0;
     transform: scale(1);
     color: #fff;
 }
@@ -1887,7 +1902,6 @@ span.single-social-icon i {
 
 .primery-info-content p{
     font-size     : 18px;
-    text-transform: capitalize;
     font-weight   : 400;
     color: #08d665;
     margin-bottom: 0;
@@ -1895,7 +1909,9 @@ span.single-social-icon i {
 
 
 
-
+.owl-nav{
+    display: none;
+}
 
 .info-content{
     padding-left: 30px;
@@ -1905,7 +1921,6 @@ span.single-social-icon i {
 
 .info-content p{
     font-size     : 18px;
-    text-transform: capitalize;
     font-weight   : 400;
     margin-bottom: 0;
 }
@@ -2110,7 +2125,7 @@ p.single-soicial-text {
 }
 .default-style h4{
  font-size: 18px;
-    color: #000;
+    color: #08d665;
     font-weight: 500;
 }
 .common-row p{
