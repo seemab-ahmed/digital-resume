@@ -296,7 +296,11 @@ a.contact-btn:hover{
 .side-content {
     margin: 40px 0;
 }
-
+.green-bold{
+    font-size: 22px;
+    color: #22cd6f;
+    font-weight: 700;
+}
 .side-social li {
     display: inline-block;
 }
@@ -394,11 +398,14 @@ a.contact-btn:hover{
     bottom  : 0;
     height  : 90%;
     z-index : -1;
+    overflow: hidden;
+    border: none;
 }
 
-.author-1 img {
+.wic-author-1 img {
     height: 100%;
-    width : auto;
+    width : 100%;
+    object-fit: contain;
 }
 
 
@@ -468,6 +475,9 @@ h1.wlc-filltext {
 .wlc-author-1 img {
     position: absolute;
     bottom: 0;
+       width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 
@@ -480,6 +490,7 @@ h1.wlc-filltext {
 
 .about-img-section {
     padding: 240px 0;
+    
 }
 .about-area1{
     background-image: url(assets/img/bg/about-bg.html);
@@ -487,7 +498,7 @@ h1.wlc-filltext {
     background-size: cover;
 }
 .about-img-section1{
-    background-image: url(../img/about/about1.png);
+    background-image: url(../img/about/headshot\ 2025\ 3.jpg);
     background-size: cover;
     background-position: center
 }
@@ -1300,7 +1311,11 @@ span.circle.circle-4 {
     TESTIMONIALS AREA CSS
 ==========================
 */
-
+.testimonial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .testimonials .owl-nav {
     position: absolute;
     top: -59%;
@@ -1702,6 +1717,11 @@ span.single-social-icon i {
     transition: all .3s;
 }
 
+.sinlge-social-hover img{
+    width: 100%;
+    /* height: 100%; */
+    object-fit: contain;
+}
 
 /*
 ==========================
@@ -2137,7 +2157,11 @@ p.single-soicial-text {
     overright
 =====================
 */
-.owl-carousel .owl-item img{
+.owl-item img{
     display: inline-block;
     width: auto;
+}
+
+.owl-item li a img{
+        border: 1px solid rgb(59, 59, 59);
 }
