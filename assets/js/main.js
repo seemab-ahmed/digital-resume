@@ -351,3 +351,35 @@ jQuery(document).ready(function($) {
 }(jQuery));
 
 
+
+
+
+
+
+
+
+
+
+// .........................................
+// About section image slider
+  let slides = document.querySelectorAll(".about-img-section");
+  let current = 0;
+
+  function showSlide(next) {
+    slides[current].classList.remove("active");
+    slides[current].classList.add("prev");
+
+    current = (next + slides.length) % slides.length;
+
+    slides[current].classList.remove("prev");
+    slides[current].classList.add("active");
+  }
+
+  // har 3 second baad slide change ho
+  setInterval(() => {
+    showSlide(current + 1);
+  }, 2000);
+
+
+
+

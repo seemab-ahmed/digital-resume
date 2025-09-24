@@ -487,6 +487,9 @@ h1.wlc-filltext {
 	ABOUT ATRA CSS
 ==========================
 */
+.custom{
+    width: 100%;
+}
 
 .about-img-section {
     padding: 240px 0;
@@ -540,6 +543,17 @@ a.about-video {
     background-repeat: no-repeat;
     bottom           : -20%;
     left             : -15%;
+    z-index          : -1;
+}
+.about_shape1:before {
+    position         : absolute;
+    content          : "";
+    height           : 300px;
+    width            : 300px;
+    background       : url(../img/about/about-shape.svg) no-repeat;
+    background-repeat: no-repeat;
+        bottom: -28%;
+    left: -10%;
     z-index          : -1;
 }
 .about-area-primery .about-shape:before {
@@ -1348,16 +1362,20 @@ span.circle.circle-4 {
     -o-transition:all .3s;
     transition:all .3s;
 }
-.testimonial-img {
+.testimonial-text {
+    display: flex;
+}
+/* .testimonial-img {
+     display: none; 
     height: 100px;
     width: 100px;
-    border-radius: 50%;
+    border-radius: 50%; 
     overflow: hidden;
     position: absolute;
     left: 0;
     top: 50%;
-    margin-top: -50px;
-}
+    margin-top: -50px; 
+} */
 
 .testimonial-img img {
     max-width: 100%;
@@ -1368,16 +1386,23 @@ span.circle.circle-4 {
 .testimonial {
     position: relative;
     z-index: 2;
-    padding-left: 130px;
+    /* padding-left: 130px; */
 }
-
+.testimonial-text{
+    display: flex;
+    gap: 15px;
+}
 .testimonial-text h4 {
     font-size: 25px;
     text-transform: uppercase;
     line-height: 34px;
     margin: 25px 0;
 }
+#testimonial-text-img {
+width: 110px;
+height: 100px;
 
+}
 .testimonial-text p {
     font-size: 18px;
     color: #fff;
@@ -2088,7 +2113,6 @@ a.up-btn:hover {
 .install a {
   display: block;
   width: auto;
-  vertical-align: middle;
   padding: 6px 12px;
   line-height: 20px;
   background-color: transparent;
@@ -2164,4 +2188,69 @@ p.single-soicial-text {
 
 .owl-item li a img{
         border: 1px solid rgb(59, 59, 59);
+}
+
+#counter_circle{
+    display: flex;
+    flex-wrap: wrap;
+        position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#seperate_circle{
+            position: relative;
+    width:50%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-ison-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+    width: 100%;
+    padding: 0 5%;
+
+}
+
+
+/* ...................... 
+ */
+ .about-shape {
+  width: 100%;
+  height: 600px; /* adjust as needed */
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.about-img-section {
+  position: absolute;
+  top: 0;
+  left: 100%; /* sab images right side par hidden */
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 1s ease; /* smooth slide */
+}
+
+.about-img-section.active {
+  left: 0;
+  opacity: 1;
+}
+
+.about-img-section.prev {
+  left: -100%; /* pichli image left side chali jaye */
+  opacity: 0;
 }
